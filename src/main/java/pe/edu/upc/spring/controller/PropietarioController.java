@@ -20,7 +20,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.sun.el.parser.ParseException;
 
-
 import pe.edu.upc.spring.model.Propietario;
 import pe.edu.upc.spring.model.Role;
 import pe.edu.upc.spring.model.Users;
@@ -198,7 +197,6 @@ public class PropietarioController {
 	public String ingresarCuenta(@ModelAttribute("propietario") Propietario objPropietario, BindingResult binRes, Model model) throws ParseException {
 		List<Propietario> listaPropietarios;
 		
-		System.out.println(objPropietario.getEmailPropietario());
 		objPropietario.setEmailPropietario(objPropietario.getEmailPropietario());
 		objPropietario.setContrasenaPropietario(objPropietario.getContrasenaPropietario());
 		
