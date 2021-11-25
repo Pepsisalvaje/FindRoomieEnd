@@ -45,7 +45,7 @@ public class Propietario implements Serializable {
 	private String GeneroPropietario;
 	
 	@Column(name="NroCelularPropietario", length=9, nullable=false)
-	private int NroCelularPropietario;
+	private String NroCelularPropietario;
 	
 	@Column(name="EmailPropietario", length=30, nullable=false /*, unique = true*/)
 	private String EmailPropietario;
@@ -62,7 +62,7 @@ public class Propietario implements Serializable {
 
 	public Propietario(int idPropietario, String nPropietario, String aPropietario, String dNIPropietario,
 			String usernamePropietario, Date dNacimientoPropietario, String generoPropietario,
-			int nroCelularPropietario, String emailPropietario, String nacionalidadPropietario,
+			String nroCelularPropietario, String emailPropietario, String nacionalidadPropietario,
 			String contrasenaPropietario) {
 		super();
 		this.idPropietario = idPropietario;
@@ -134,11 +134,11 @@ public class Propietario implements Serializable {
 		GeneroPropietario = generoPropietario;
 	}
 
-	public int getNroCelularPropietario() {
+	public String getNroCelularPropietario() {
 		return NroCelularPropietario;
 	}
 
-	public void setNroCelularPropietario(int nroCelularPropietario) {
+	public void setNroCelularPropietario(String nroCelularPropietario) {
 		NroCelularPropietario = nroCelularPropietario;
 	}
 
